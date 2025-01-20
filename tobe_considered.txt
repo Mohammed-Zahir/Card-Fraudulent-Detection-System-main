@@ -1,0 +1,5 @@
+# Assuming you used StandardScaler during training
+scaler = StandardScaler()
+features = scaler.transform(features)  # Transform the input features
+
+prediction = model.predict(features)
