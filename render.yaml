@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: credit-card-fraud-detection
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    system:
+      apt:
+        packages:
+          - build-essential
+          - python3-dev
+          - libffi-dev
+          - libssl-dev
